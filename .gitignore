@@ -1,0 +1,26 @@
+# Python folders
+__pycache__/
+*.egg-info/
+
+# Jupyter junks
+.ipynb_checkpoints/
+
+# VSCode settings
+.vscode/
+
+# Mac junks
+*._DS_Store
+*.DS_Store
+
+figures/
+results/
+env/*
+
+*.pdf
+
+*.npy
+*.pkl
+
+# Outputs
+outputs/
+*._*.py
