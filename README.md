@@ -4,16 +4,17 @@
 
 This code relies on latest version of PyG and OGB, for best experience instead of using pre-built, use the latest code from github and install them using:
 
-git clone git@github.com:snap-stanford/ogb.git
-python setup.py develop
+    git clone git@github.com:snap-stanford/ogb.git
+    python setup.py develop
 
 
 do the same for the following repos:
-git@github.com:rusty1s/pytorch_geometric.git
-git@github.com:rusty1s/pytorch_sparse.git
-git@github.com:rusty1s/pytorch_scatter.git
-git@github.com:rusty1s/pytorch_cluster.git
-git@github.com:rusty1s/pytorch_spline_conv.git
+
+    git@github.com:rusty1s/pytorch_geometric.git
+    git@github.com:rusty1s/pytorch_sparse.git
+    git@github.com:rusty1s/pytorch_scatter.git
+    git@github.com:rusty1s/pytorch_cluster.git
+    git@github.com:rusty1s/pytorch_spline_conv.git
 
 ---
 ### data
