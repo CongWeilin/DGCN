@@ -1,4 +1,4 @@
-# Framework for Training GNN (using PyG)
+# Source code for Decoupled GCN and other baselines
 
 ## GNN
 
@@ -38,10 +38,6 @@ NodeBlock is a list of Adjacency matrices (SparseTensor) including:
 
 NodeBlock has .to() method for transfering to CUDA/CPU
 
-#### Sampler
-
-TBF: not complete yet
-
 ---
 
 ### Dataset
@@ -52,21 +48,14 @@ Dataset is loaded using PyG
 
 Specify the enviroment variable `GNN_DATASET_DIR` to select where the data is stored!
 
-PyG datasets are loaded into pyg.dataset.data consist of:
-- edge_index
-- train_mask
-- val_mask
-- test_mask
-- x: features
-- y: labels
 
 ---
 
-### layers
+### Layers
 
 ---
 
-### models
+### Models
 
 ---
 
@@ -74,26 +63,7 @@ PyG datasets are loaded into pyg.dataset.data consist of:
 
 The base class is for selecting the model/optimizer/loss.
 
-3 main function train/validition and inferece
-
-Two modes are supported now Full and Batch
-
-In Full with Base as parent class:
-
-The graph is loaded once and any preprocessing (normalization) is applied on the graph.
-One node block is created and features and labels are transfered to the `self.device`.
-
 - run():
-
-    Pre-Process 'graph' self.data
-    Create a shared 'nodeblock' self.nbs from 'graph' self.data
-
-    load features and labels
-
-    self.x
-
-    self.y
-
 - train()
 - validation()
 - inference()
