@@ -17,7 +17,14 @@ do the same for the following repos:
     git@github.com:rusty1s/pytorch_spline_conv.git
 
 ---
-### data
+
+### Scripts
+To run different models use the files in script folder. example:
+
+    python ogb-arxiv.py <output_folder> <num_repeat> <model> <num_layers>
+
+---
+### Data
 
 For computation using SPMM operations, we use the concept of NodeBlock
 
@@ -37,11 +44,13 @@ TBF: not complete yet
 
 ---
 
-### dataset
+### Dataset
 Dataset is loaded using PyG
 
     from gnn import dataset
     dataset('cora')
+
+Specify the enviroment variable `GNN_DATASET_DIR` to select where the data is stored!
 
 PyG datasets are loaded into pyg.dataset.data consist of:
 - edge_index
@@ -54,7 +63,6 @@ PyG datasets are loaded into pyg.dataset.data consist of:
 ---
 
 ### layers
-
 
 ---
 
@@ -75,27 +83,20 @@ In Full with Base as parent class:
 The graph is loaded once and any preprocessing (normalization) is applied on the graph.
 One node block is created and features and labels are transfered to the `self.device`.
 
-- run()
+- run():
 
-Pre-Process 'graph' self.data
-Create a shared 'nodeblock' self.nbs from 'graph' self.data
+    Pre-Process 'graph' self.data
+    Create a shared 'nodeblock' self.nbs from 'graph' self.data
 
-load features and labels
-self.x
-self.y
+    load features and labels
+
+    self.x
+
+    self.y
 
 - train()
 - validation()
 - inference()
 
-In Batch with Full as parent class:
-
-validation and 
-
-
-
-## Notebooks
-
-## Tests
 
 ## Examples
