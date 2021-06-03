@@ -1,6 +1,11 @@
-# Source code for Decoupled GCN and other baselines
+# Source code for On Provable Benefits of Depth in Training Graph Convolutional Networks
 
-## GNN
+The experiments are seperated into two parts, 
+- The code for Open Graph Benchmark can be find in folder `./OGB_exps/`
+- The code for synthetic, Cora, Citeseer datasets can be find in folder `./small_graph_exps/`
+
+## Reproduce results on OGB datasets
+
 
 This code relies on latest version of PyG and OGB, for best experience instead of using pre-built, use the latest code from github and install them using:
 

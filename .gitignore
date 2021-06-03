@@ -1,26 +1,18 @@
-# Python folders
-__pycache__/
-*.egg-info/
+# Build and Release Folders
+bin-debug/
+bin-release/
+[Oo]bj/
+[Bb]in/
 
-# Jupyter junks
-.ipynb_checkpoints/
+# Other files and folders
+.settings/
 
-# VSCode settings
-.vscode/
+# Executables
+*.swf
+*.air
+*.ipa
+*.apk
 
-# Mac junks
-*._DS_Store
-*.DS_Store
-
-figures/
-results/
-env/*
-
-*.pdf
-
-*.npy
-*.pkl
-
-# Outputs
-outputs/
-*._*.py
+# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
+# should NOT be excluded as they contain compiler settings and other important
+# information for Eclipse / Flash Builder.
